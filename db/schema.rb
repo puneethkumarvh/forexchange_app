@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_20_171007) do
   create_table "conversions", force: :cascade do |t|
     t.string "base_currency"
     t.string "target_currency"
-    t.integer "conv_count"
+    t.integer "conv_count", default: 1
     t.date "conv_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

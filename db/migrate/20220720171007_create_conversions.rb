@@ -3,7 +3,7 @@ class CreateConversions < ActiveRecord::Migration[7.0]
     create_table :conversions do |t|
       t.string :base_currency
       t.string :target_currency
-      t.integer :conv_count
+      t.integer :conv_count,default: 1
       t.date :conv_date
 
       t.timestamps

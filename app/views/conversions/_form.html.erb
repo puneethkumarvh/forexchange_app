@@ -20,18 +20,15 @@
     <%= form.label :target_currency, style: "display: block" %>
     <%= form.text_field :target_currency %>
   </div>
-
   <div>
-    <%= form.label :conv_count, style: "display: block" %>
-    <%= form.number_field :conv_count %>
+    <%= form.label :base_amount, style: "display: block" %>
+    <%= form.number_field :base_amount %>
   </div>
-
+  
+<div>
+</div>
   <div>
-    <%= form.label :conv_date, style: "display: block" %>
-    <%= form.date_field :conv_date %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+  <%= form.submit %>
   </div>
 <% end %>
+

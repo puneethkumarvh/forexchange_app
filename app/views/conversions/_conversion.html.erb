@@ -8,15 +8,15 @@
     <strong>Target currency:</strong>
     <%= conversion.target_currency %>
   </p>
-
   <p>
-    <strong>Conv count:</strong>
-    <%= conversion.conv_count %>
+    <strong>Base amount:</strong>
+    <%= @base_amount %>
   </p>
 
+ 
   <p>
-    <strong>Conv date:</strong>
-    <%= conversion.conv_date %>
+    <strong>Amount:</strong>
+    <%= @result.to_s+" #{@conversion.target_currency}" %>
   </p>
 
 </div>
